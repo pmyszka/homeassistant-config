@@ -1,0 +1,3 @@
+- name: wopr
+  platform: pushbullet
+  api_key: !secret pushbullet_key

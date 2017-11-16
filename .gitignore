@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.HA_VERSION
+/.uuid
+/deps/
+/tts/
+/home-assistant.log
+/secrets.yaml
+/home-assistant*.db

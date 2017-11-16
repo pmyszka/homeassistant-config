@@ -1,0 +1,32 @@
+homeassistant:
+  name: WOPR
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: metric
+  time_zone: Europe/London
+  customize: !include customize.yaml
+
+frontend:
+http:
+updater:
+recorder:
+history:
+logbook:
+
+#
+
+sun:
+
+emulated_hue:
+  expose_by_default: false
+
+sensor: !include sensors.yml
+binary_sensor: !include binary_sensors.yml
+switch: !include switches.yml
+camera: !include cameras.yml
+zone: !include zones.yml
+automation: !include_dir_merge_list automation
+
+notify: !include notify.yml
+

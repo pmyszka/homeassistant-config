@@ -1,0 +1,10 @@
+switch.motion_record:
+  emulated_hue: true
+  emulated_hue_name: Camera
+
+switch.living_room_lamp:
+  friendly_name: Living Room Lamp
+  icon: mdi:lightbulb
+  emulated_hue: true
+  emulated_hue_name: Lamp
+

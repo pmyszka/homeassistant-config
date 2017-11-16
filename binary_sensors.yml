@@ -1,0 +1,5 @@
+- platform: rest
+  resource: !secret sensor_motion
+  value_template: "{{ value_json.state.present }}"
+  scan_interval: 2
+  name: Living room motion

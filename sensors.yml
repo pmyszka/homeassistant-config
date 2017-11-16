@@ -1,0 +1,18 @@
+- platform: rest
+  resource: !secret sensor_light
+  value_template: "{{ value_json.state.lightlevel }}"
+  unit_of_measurement: Lux
+  name: Light
+
+- platform: rest
+  resource: !secret sensor_temperature
+  value_template: "{{ value_json.state.temperature | float / 100 }}"
+  unit_of_measurement: °C
+  name: Temperature
+
+- platform: rest
+  resource: !secret sensor_battery
+  value_template: "{{ value_json.config.battery }}"
+  unit_of_measurement: "%"
+  scan_interval: 1800
+  name: Battery level
