@@ -1,3 +1,4 @@
+---
 - platform: mjpeg
   mjpeg_url: !secret camera_living_room
   name: Living room camera

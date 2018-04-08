@@ -1,3 +1,4 @@
+---
 - platform: rest
   resource: !secret sensor_light
   value_template: "{{ value_json.state.lightlevel }}"
@@ -16,3 +17,4 @@
   unit_of_measurement: "%"
   scan_interval: 1800
   name: Battery level
+

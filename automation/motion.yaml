@@ -1,0 +1,15 @@
+---
+- alias: "Motion detected"
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.living_room_motion
+    to: 'on'
+  condition:
+    condition: state
+    entity_id: switch.presence
+    state: 'off'
+  action:
+    - service: notify.ios_piotr
+      data:
+        message: "Motion detected in the living room!"

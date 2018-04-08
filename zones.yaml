@@ -1,7 +1,8 @@
+---
 - name: Home
   latitude: !secret home_latitude
   longitude: !secret home_longitude
-  radius: 200
+  radius: 20
   icon: mdi:home
 
 - name: Work
